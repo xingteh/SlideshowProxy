@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "slideshowproxy",
+  "version": "${version}",
+  "name": "Slide Show Proxy",
+  "description": "",
+  "authors": ["GTEH"],
+  "contact": {
+    "email": "gteh@gteh.top",
+    "homepage": "https://lps.gteh.top",
+    "sources": "https://github.com/xingteh/SlideshowProxy",
+    "issues": "https://github.com/xingteh/SlideshowProxy/issues"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "top.gteh.slideshowproxy.SlideshowProxy"
+    ],
+    "client": [
+      "top.gteh.slideshowproxy.client.SlideshowProxyClient"
+    ]
+  },
+  "mixins": [
+    "slideshowproxy.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "slide_show": "*"
+  }
+}
