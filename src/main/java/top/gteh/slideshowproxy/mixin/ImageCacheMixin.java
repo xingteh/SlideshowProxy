@@ -51,7 +51,6 @@ public class ImageCacheMixin {
             request.addHeader("Cache-Control", "must-revalidate");
         }
 
-        SlideshowProxy.LOGGER.info(url.getLeft());
         cir.setReturnValue(mHttpClient.execute(request, context));
     }
 }
