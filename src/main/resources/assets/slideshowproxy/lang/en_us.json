@@ -1,0 +1,6 @@
+{
+  "commands.slideshowproxy.reloaded": "Reloaded Slide Show Proxy config.",
+  "commands.slideshowproxy.disable": "The Proxy that comes with Slide Show has been disabled.",
+  "gui.slideshowproxy.warn": "You have enabled the Proxy that comes with Slide Show. The Slide Show Proxy acceleration feature has been automatically disabled. If all images cannot be loaded, please click the button to disable the Proxy that comes with Slide Show.",
+  "gui.slideshowproxy.disable_slideshow_proxy": "[Disable]"
+}

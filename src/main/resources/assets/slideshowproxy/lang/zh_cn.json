@@ -1,0 +1,6 @@
+{
+  "commands.slideshowproxy.reloaded": "已重新加载 Slide Show Proxy 配置。",
+  "commands.slideshowproxy.disable": "已禁用 Slide Show 自带的网络代理功能。",
+  "gui.slideshowproxy.warn": "您已开启 Slide Show 自带的网络代理功能。Slide Show Proxy 加速功能已自动禁用。如遇图片全部无法加载，请点击按钮禁用 Slide Show 自带的网络代理。",
+  "gui.slideshowproxy.disable_slideshow_proxy": "[禁用]"
+}

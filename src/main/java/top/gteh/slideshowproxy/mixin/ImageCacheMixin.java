@@ -19,21 +19,21 @@ import javax.imageio.ImageIO;
 import java.io.IOException;
 import java.net.URI;
 
-@Mixin(ImageCache.class)
-public class ImageCacheMixin {
-    @Shadow(remap = false)
+@Mixin(value = ImageCache.class, remap = false)
+public abstract class ImageCacheMixin {
+    @Shadow()
     @Final
     private CloseableHttpClient mHttpClient;
 
-    @Shadow(remap = false)
+    @Shadow()
     @Final
     private static String DEFAULT_USER_AGENT;
 
-    @Shadow(remap = false)
+    @Shadow()
     @Final
     private static String DEFAULT_REFERER;
 
-    @Inject(method = "createResponse", at = @At("HEAD"), cancellable = true, remap = false)
+    @Inject(method = "createResponse", at = @At("HEAD"), cancellable = true)
     private void createResponse(URI location, HttpCacheContext context, boolean online, CallbackInfoReturnable<CloseableHttpResponse> cir) throws IOException {
         Triple<String, String, String> url = RewriteProcessor.resolve(location.toASCIIString(), SlideshowProxy.REWRITE_RULES, DEFAULT_USER_AGENT, DEFAULT_REFERER);
         HttpGet request = new HttpGet(url.getLeft());

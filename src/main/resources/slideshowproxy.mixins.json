@@ -4,7 +4,8 @@
   "package": "top.gteh.slideshowproxy.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ImageCacheMixin"
+    "ImageCacheMixin",
+    "SlideStateMixin"
   ],
   "client": [
   ],

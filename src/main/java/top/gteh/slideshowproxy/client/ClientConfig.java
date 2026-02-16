@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class ClientConfig {
-    public static String remoteConfigUrl = "https://gitea.dusays.com/fenychn0206/lps-community-guide/raw/branch/main/docs/assets/gameresources/rewrite_config.json";
+    public static String remoteConfigUrl = "https://gitea.dusays.com/fenychn0206/static/raw/branch/main/rewrite_config.json";
 
     public static void load() {
         Path path = FabricLoader.getInstance().getConfigDir().resolve(SlideshowProxy.MOD_ID + "_remote_config_url.txt");
